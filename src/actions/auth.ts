@@ -144,11 +144,11 @@ export const registerUser = async (email: string, password: string) => {
             user: safeUser,
             error: null,
         };
-    } catch (error) {
+    } catch(e) {
         return {
             user: null,
             error: "Failed to register user"
-        };
+        }
     }
 
 };
