@@ -6,6 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
+  output = "../src/app/generated/prisma"
 }
 
 datasource db {
@@ -13,14 +14,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-
-
-
 model User {
-  id       Int       @id @default(autoincrement())
-  email    String    @unique
+  id           Int       @id @default(autoincrement())
+  email        String    @unique
   passwordHash String
-  sessions Session[]
+  sessions     Session[]
 }
 
 model Session {
@@ -28,5 +26,5 @@ model Session {
   userId    Int
   expiresAt DateTime
 
-  user      User     @relation(references: [id], fields: [userId], onDelete: Cascade)
+  user User @relation(references: [id], fields: [userId], onDelete: Cascade)
 }
