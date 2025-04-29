@@ -88,7 +88,7 @@ const Header = () => {
 
 
             {/* second item */}
-            <Link href='#'>link</Link>
+            <Link href='/'>link</Link>
 
 
 
