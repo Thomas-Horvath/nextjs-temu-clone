@@ -76,7 +76,7 @@ const SignUp = ({ action }: SignUpProps) => {
             </>
           ) : (
             'CREATE ACCOUNT'    
-            
+
           )}
         </button>
 
@@ -89,5 +89,8 @@ const SignUp = ({ action }: SignUpProps) => {
     </Form>
   )
 }
+
+
+
 
 export default SignUp
