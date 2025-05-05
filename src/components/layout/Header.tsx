@@ -130,10 +130,12 @@ const Header = ({ user }: HeaderProps) => {
                   </Link>
                 </div>
               ) : (
+                
                 <>
                   <Link href='/auth/sign-in'  className='text-sx sm:text-sm font-medium text-gray-700 hover:text-gray-900'>Sign In</Link>
                   <Link href='/auth/sign-up'  className='text-sx sm:text-sm font-medium text-gray-700 hover:text-gray-900'>Sign Up</Link>
                 </> 
+
               )}
 
 

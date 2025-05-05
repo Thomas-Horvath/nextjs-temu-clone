@@ -75,7 +75,8 @@ const SignUp = ({ action }: SignUpProps) => {
               CREATING ACCOUNT...
             </>
           ) : (
-            'CREATE ACCOUNT'
+            'CREATE ACCOUNT'    
+            
           )}
         </button>
 
