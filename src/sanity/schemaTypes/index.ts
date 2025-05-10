@@ -1,5 +1,5 @@
 import { type SchemaTypeDefinition } from 'sanity'
-import { promise } from 'zod'
+
 import { promotionCode } from './schemas/promotion-code'
 import { promotionCampaign } from './schemas/promotion-campaign'
 import { productCategory } from './schemas/product-category'
